@@ -22,7 +22,7 @@ sub3 = p3.sub
 
 def conv_line(line):
     try:
-        return sub3(',', sub2('.', sub('', romkan.to_roma(unicode(line, ('utf8'))).encode('utf8'))))
+        return sub3(',', sub2('.', sub('', romkan.to_kunrei(romkan.to_roma(unicode(line, ('utf8'))).encode('utf8')))))
     except:
         return ''
 
